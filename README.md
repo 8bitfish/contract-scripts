@@ -1,3 +1,3 @@
-# contract-scripts
+# Smart contract interaction scripts for 8bitfish
 
-The main and helper scripts to mint and create new tokens for the 8bitfish smart contract on the polygon blockchain.
+More info coming soon...
