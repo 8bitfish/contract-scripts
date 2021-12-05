@@ -1,0 +1,7 @@
+/node_modules
+.DS_Store
+.env
+/gen/assets/generated/*
+/build/contracts/*
+/prisma/migrations/*
+/prisma/database.db

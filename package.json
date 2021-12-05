@@ -1,0 +1,44 @@
+{
+  "name": "8bitfish",
+  "version": "0.0.0",
+  "description": "8Bitfish generator",
+  "scripts": {
+    "suite:dev": "npx truffle exec scripts/main/suite.js --network development",
+    "suite:rinkeby": "npx truffle exec scripts/main/suite.js --network rinkeby",
+    "suite:mumbai": "npx truffle exec scripts/main/suite.js --network mumbai",
+    "suite:polygon": "npx truffle exec scripts/main/suite.js --network polygon",
+    "reset:contract:dev": "npx truffle migrate --reset --network development",
+    "reset:contract:rinkeby": "npx truffle migrate --reset --network rinkeby",
+    "reset:contract:mumbai": "npx truffle migrate --reset --network mumbai",
+    "reset:contract:polygon": "npx truffle migrate --reset --network polygon",
+    "reset:dev": "node scripts/helpers/reset.js development",
+    "reset:rinkeby": "node scripts/helpers/reset.js rinkeby",
+    "reset:mumbai": "node scripts/helpers/reset.js mumbai",
+    "reset:polygon": "node scripts/helpers/reset.js polygon",
+    "db:sync": "npx prisma db push",
+    "db:reset": "npx prisma migrate reset",
+    "db:migrate": "npx prisma migrate dev"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.1.0",
+    "@pinata/sdk": "^1.1.23",
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "axios": "^0.22.0",
+    "color-convert": "^2.0.1",
+    "dotenv": "^8.2.0",
+    "enquirer": "^2.3.6",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "@prisma/client": "^3.6.0",
+    "depcheck": "^0.9.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "prisma": "^3.6.0",
+    "truffle": "^5.1.5",
+    "truffle-plugin-verify": "^0.5.7"
+  }
+}

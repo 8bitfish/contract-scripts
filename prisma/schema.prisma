@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./database.db"
+  // url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  // previewFeatures = ["mongodb"]
+}
+
+model BitFish {
+id      Int      @id @default(autoincrement())
+network String
+tokenId Int
+jsonHash    String
+imageHash String
+pattern String
+primaryColor String
+secondaryColor String
+}
+
